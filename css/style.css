@@ -1,0 +1,851 @@
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+.header {
+	display: flex;
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	z-index: 2;
+	width: 720px;
+}
+
+
+
+.widget {
+	display: flex;
+	background-color: #F6444B;
+}
+
+.btnWidget {
+		
+}
+
+a {
+	color: white;
+}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+.newProductsHome {
+	display: flex;
+}
+
+.newProductHomeBlock {
+	background-color: #E1E1E1;
+
+	text-align: center;
+	font-family: Arial;
+}
+
+h4 {
+	font-family: Arial;
+	text-align: center;
+}
+
+.linkNews {
+	color: #F6444B;
+}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+.guidesTitle {
+	margin-left: 5%;
+}
+
+.guideHome {
+	display: flex;
+	margin-left: 5%;
+	margin-right: 5%;
+
+	font-family: Arial;
+
+	background-color: #E1E1E1;
+	padding: 2%;
+	margin-bottom: 4%;
+}
+
+.textLeft {
+	margin-right: 5%;
+}
+
+.textRight {
+	margin-left: 4%;
+}
+
+.guideText {
+	margin-left: 7%;
+	margin-right: 7%;
+	font-family: Arial;
+	font-size: 1em;
+}
+
+.linkGuide {
+	color: black;
+}
+
+h5 {
+	font-size: 1.3em;
+}
+
+h1 {
+	font-family: Title;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+.news {
+	padding-left: 5%;
+	padding-right: 5%;
+
+	font-family: Arial;
+}
+
+.blog1 {
+	border: 1px solid black;
+	padding: 1.5%;
+	margin-bottom: 4%;
+}
+
+h2 {
+	text-align: center;
+	font-family: Arial;
+}
+
+h3 {
+	color: #F6444B;
+	font-family: Arial;
+}
+
+/*-----------------------------
+------------Подвал--------------
+------------------------------*/
+
+.footer {
+	background-color: #F6444B;
+
+	font-family: Arial;
+	text-align: center;
+
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.cop {
+	text-align: center;
+	font-family: Arial;
+}
+
+
+
+
+
+/*-----------------------------
+-------------Шрифт-------------
+------------------------------*/
+
+@font-face {
+	font-family: Title;
+	src: url(../fonts/font1.otf);
+}
+
+/*-----------------------------
+---Адаптация под разрешения----
+------------------------------*/
+
+@media (max-width: 1440px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 1.8em;
+		padding-left: 10%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: flex;
+	}
+
+	.newProductHomeBlock {
+		width: 30%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-left: 2.5%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 2.4em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 1.8em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 2em;
+	}
+
+	h5 {
+		font-size: 1.4em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 2.7em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.6em;
+		color: #F6444B;
+	}
+
+/*------------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 3em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+		
+	}
+
+	.btnWidget {
+		font-size: 1.4em;
+		padding-left: 10%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: flex;
+	}
+
+	.newProductHomeBlock {
+		width: 30%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-left: 2.5%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 0.9em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 1.6em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 1.2em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 1.6em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-size: 0.8em;
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.2%;
+		margin-bottom: 4%;
+
+		font-size: 1.1em;
+	}
+
+	h2 {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	h3 {
+		color: #F6444B;
+		font-size: 1.8em;
+	}
+
+/*-----------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 6em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
+
+
+
+@media (max-width: 768px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 1em;
+		padding-left: 10%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: block;
+	}
+
+	.newProductHomeBlock {
+		width: 60%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-bottom: 4%;
+		margin-left: 19%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 1em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.7em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.3em;
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 1.2em;
+	}
+
+	h5 {
+		font-size: 1.2em;
+	}
+
+	.guideHome {
+
+		font-size: 1em;
+		font-family: Arial;
+
+	}
+
+}
+
+/*-----------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 1.2em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+
+
+@media (max-width: 425px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 0.5em;
+		padding-left: 10%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: block;
+	}
+
+	.newProductHomeBlock {
+		width: 60%;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+		margin-left: 19%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 0.7em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 0.7em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 1em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 0.7em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 0.9em;
+	}
+
+	h5 {
+		font-size: 1.3em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 1.1em;
+	}
+
+	h2 {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.3em;
+		color: #F6444B;
+	}
+
+/*-----------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 0.8em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
+
+
+
+
+
+
+@media (max-width: 2560px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 3em;
+		padding-left: 11%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: flex;
+	}
+
+	.newProductHomeBlock {
+		width: 30%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-left: 2.5%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 1.1em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 1.4em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 2.4em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 1.8em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 2em;
+	}
+
+	h5 {
+		font-size: 1.4em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 2.7em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.6em;
+		color: #F6444B;
+	}
+
+/*------------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 3em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
