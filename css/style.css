@@ -26,6 +26,7 @@
 
 a {
 	color: white;
+	text-decoration: none;
 }
 
 /*-----------------------------
@@ -699,6 +700,148 @@ h3 {
 
 		font-family: Arial;
 		font-size: 0.8em;
+		text-align: center;
+
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
+
+
+
+
+
+@media (min-width: 1980px) and (max-width: 2560px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 3.2em;
+		padding-left: 10%;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: flex;
+	}
+
+	.newProductHomeBlock {
+		width: 30%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-left: 2.5%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 2.5em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 4em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 4em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 3em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 3em;
+	}
+
+	h5 {
+		font-size: 3em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 3.2em;
+	}
+
+	h2 {
+		font-size: 5em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.4em;
+		color: #F6444B;
+	}
+
+/*------------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
+		background-color: #F6444B;
+
+		font-family: Arial;
+		font-size: 3em;
 		text-align: center;
 
 		padding-top: 3%;
