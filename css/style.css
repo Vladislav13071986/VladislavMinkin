@@ -1,9 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 /*-----------------------------
 -------------Шапка-------------
 ------------------------------*/
 
 .header {
-	display: flex;
 	position: relative;
 }
 
@@ -15,18 +23,34 @@
 
 
 
-.widget {
-	display: flex;
-	background-color: #F6444B;
+
+#widget, #widget li {
+	margin: 0;
+	padding: 0;
 }
 
-.btnWidget {
-		
+#widget {
+	text-align: center;
 }
 
-a {
-	color: white;
+#widget li{
+	display:inline-block;
+	text-align: center;
+	width: 20%;
+}
+
+#widget a {
+	display: block;
+	padding: 5px 15px;
+	color: #fff;
+	font-size: 150%;
 	text-decoration: none;
+	background: #f64a46;
+	margin-right: 5px;
+}
+
+#widget a:hover {
+	background: #f77472;
 }
 
 /*-----------------------------
@@ -51,6 +75,10 @@ h4 {
 
 .linkNews {
 	color: #F6444B;
+}
+
+.linkNews:hover {
+	color: #fcaeae;
 }
 
 /*-----------------------------
@@ -134,13 +162,21 @@ h3 {
 ------------------------------*/
 
 .footer {
-	background-color: #F6444B;
+	background-color: #f64a46;
 
 	font-family: Arial;
 	text-align: center;
 
 	padding-top: 3%;
 	padding-bottom: 3%;
+}
+
+.footer a {
+	color: #ffffff;
+}
+
+.footer a:hover {
+	color: #b3b3b3;
 }
 
 .cop {
@@ -180,9 +216,18 @@ h3 {
 		left: 30%;
 	}
 
-	.btnWidget {
-		font-size: 1.8em;
-		padding-left: 10%;
+	.btnWidget a {
+		padding: 1em;
+	}
+
+	#widget li{
+		width: 20%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 200%;
+		margin-right: 5px;
 	}
 
 /*-----------------------------
@@ -250,7 +295,7 @@ h3 {
 		margin-left: 7%;
 		margin-right: 7%;
 		font-family: Arial;
-		font-size: 2em;
+		font-size: 1.6em;
 	}
 
 	h5 {
@@ -291,8 +336,6 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		background-color: #F6444B;
-
 		font-family: Arial;
 		font-size: 3em;
 		text-align: center;
@@ -321,9 +364,18 @@ h3 {
 		
 	}
 
-	.btnWidget {
-		font-size: 1.4em;
-		padding-left: 10%;
+	.btnWidget a {
+		padding: 1em;
+	}
+
+	#widget li{
+		width: 20%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 150%;
+		margin-right: 5px;
 	}
 
 /*-----------------------------
@@ -433,8 +485,6 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		background-color: #F6444B;
-
 		font-family: Arial;
 		font-size: 6em;
 		text-align: center;
@@ -465,6 +515,16 @@ h3 {
 	.btnWidget {
 		font-size: 1em;
 		padding-left: 10%;
+	}
+
+	#widget li{
+		width: 20%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 120%;
+		margin-right: 5px;
 	}
 
 /*-----------------------------
@@ -557,8 +617,6 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		background-color: #F6444B;
-
 		font-family: Arial;
 		font-size: 1.2em;
 		text-align: center;
@@ -587,6 +645,16 @@ h3 {
 	.btnWidget {
 		font-size: 0.5em;
 		padding-left: 10%;
+	}
+
+	#widget li{
+		width: 24%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 90%;
+		margin-right: 5px;
 	}
 
 /*-----------------------------
@@ -696,8 +764,6 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		background-color: #F6444B;
-
 		font-family: Arial;
 		font-size: 0.8em;
 		text-align: center;
@@ -706,6 +772,18 @@ h3 {
 		padding-bottom: 3%;
 	}
 
+}
+
+@media (max-width: 320px) {
+	#widget li{
+		width: 22%;
+	}
+
+	#widget a {
+		padding: 4px 10px;
+		font-size: 70%;
+		margin-right: 5px;
+	}
 }
 
 
@@ -730,6 +808,16 @@ h3 {
 	.btnWidget {
 		font-size: 3.2em;
 		padding-left: 10%;
+	}
+
+	#widget li{
+		width: 20%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 350%;
+		margin-right: 5px;
 	}
 
 /*-----------------------------
@@ -769,7 +857,7 @@ h3 {
 
 	.guidesTitle {
 		margin-left: 5%;
-		font-size: 4em;
+		font-size: 4.5em;
 	}
 
 	.guideHome {
@@ -838,8 +926,155 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		background-color: #F6444B;
+		font-family: Arial;
+		font-size: 3em;
+		text-align: center;
 
+		padding-top: 3%;
+		padding-bottom: 3%;
+	}
+
+}
+
+
+
+
+@media (min-width: 1441px) and (max-width: 1979px) {
+
+/*-----------------------------
+-------------Шапка-------------
+------------------------------*/
+
+	.logo {
+		position: absolute;
+		z-index: 2;
+		width: 40%;
+
+		top: 30%;
+		left: 30%;
+	}
+
+	.btnWidget {
+		font-size: 3.2em;
+		padding-left: 10%;
+	}
+
+	#widget li{
+		width: 20%;
+	}
+
+	#widget a {
+		padding: 5px 15px;
+		font-size: 250%;
+		margin-right: 5px;
+	}
+
+/*-----------------------------
+--------Главная вкладка--------
+------------------------------*/
+
+	.newProductsHome {
+		display: flex;
+	}
+
+	.newProductHomeBlock {
+		width: 30%;
+
+		background-color: #E1E1E1;
+		padding: 1%;
+		margin-left: 2.5%;
+
+
+		text-align: center;
+		font-family: Arial;
+		font-size: 1.2em;
+	}
+
+	h4 {
+		font-family: Arial;
+		font-size: 2em;
+		text-align: center;
+	}
+
+	.linkNews {
+		color: #F6444B;
+	}
+
+/*-----------------------------
+-------Вкладка с гайдами-------
+------------------------------*/
+
+	.guidesTitle {
+		margin-left: 5%;
+		font-size: 3em;
+	}
+
+	.guideHome {
+		display: flex;
+		margin-left: 5%;
+		margin-right: 5%;
+
+		font-size: 1.8em;
+		font-family: Arial;
+
+		background-color: #E1E1E1;
+		padding: 2%;
+		margin-bottom: 4%;
+	}
+
+	.textLeft {
+		margin-right: 5%;
+	}
+
+	.textRight {
+		margin-left: 4%;
+	}
+
+	.guideText {
+		margin-left: 7%;
+		margin-right: 7%;
+		font-family: Arial;
+		font-size: 3em;
+	}
+
+	h5 {
+		font-size: 3em;
+	}
+
+/*-----------------------------
+------Вкладка с новостями------
+------------------------------*/
+
+	.news {
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-family: Arial;
+	}
+
+	.blog1 {
+		border: 1px solid black;
+		padding: 1.5%;
+		margin-bottom: 4%;
+
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 3.5em;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.4em;
+		color: #F6444B;
+	}
+
+/*------------------------------
+------------Подвал--------------
+------------------------------*/
+
+	.footer {
 		font-family: Arial;
 		font-size: 3em;
 		text-align: center;
