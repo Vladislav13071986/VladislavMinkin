@@ -23,7 +23,6 @@ a {
 
 
 
-
 #widget, #widget li {
 	margin: 0;
 	padding: 0;
@@ -52,6 +51,56 @@ a {
 #widget a:hover {
 	background: #f77472;
 }
+
+
+
+.guideList {
+	position: fixed;
+	bottom: 40%;
+	right: 0;
+	font-family: Arial;
+}
+
+.dropbtn {
+    background-color: #f64a46;
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f77472;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+	text-align: center;
+    display: none;
+    position: absolute;
+    background-color: #E1E1E1;
+    
+    overflow: auto;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #fcaeae;
+}
+
+.show {display: block;}
 
 /*-----------------------------
 --------Главная вкладка--------
@@ -284,6 +333,15 @@ h3 {
 		margin-right: 5px;
 	}
 
+
+	.guideList a {
+		font-size: 1.3em;
+	}
+
+	.dropbtn {
+    	font-size: 1.1em;
+	}
+
 /*-----------------------------
 --------Главная вкладка--------
 ------------------------------*/
@@ -448,6 +506,16 @@ h3 {
 		margin-right: 5px;
 	}
 
+
+	.guideList a {
+		font-size: 1em;
+	}
+
+	.dropbtn {
+    	font-size: 0.9em;
+	}
+
+
 /*-----------------------------
 --------Главная вкладка--------
 ------------------------------*/
@@ -610,7 +678,16 @@ h3 {
 	#widget a {
 		padding: 5px 15px;
 		font-size: 120%;
-		margin-right: 5px;
+		margin-right: 10px;
+	}
+
+
+	.guideList a {
+		font-size: 0.8em;
+	}
+
+	.dropbtn {
+    	font-size: 0.7em;
 	}
 
 /*-----------------------------
@@ -757,6 +834,14 @@ h3 {
 		padding: 5px 15px;
 		font-size: 90%;
 		margin-right: 5px;
+	}
+
+	.guideList a {
+		font-size: 0.7em;
+	}
+
+	.dropbtn {
+    	font-size: 0.6em;
 	}
 
 /*-----------------------------
@@ -938,6 +1023,14 @@ h3 {
 		margin-right: 5px;
 	}
 
+	.guideList a {
+		font-size: 2.5em;
+	}
+
+	.dropbtn {
+    	font-size: 2.3em;
+	}
+
 /*-----------------------------
 --------Главная вкладка--------
 ------------------------------*/
@@ -1101,6 +1194,14 @@ h3 {
 		padding: 5px 15px;
 		font-size: 250%;
 		margin-right: 5px;
+	}
+
+	.guideList a {
+		font-size: 2em;
+	}
+
+	.dropbtn {
+    	font-size: 1.8em;
 	}
 
 /*-----------------------------
