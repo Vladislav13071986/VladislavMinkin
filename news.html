@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <meta charset = "utf-8">
+<link rel = "stylesheet" href = "css/preloader.css">
 <link rel = "stylesheet" href = "css/style.css">
+
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <head>
 	<title>ИгроМир</title>
 </head>
 <html>
 	<body>
+		<div class="preloader">
+  			<img src="images/loader.gif" width="20%">
+  			<p>Страница загружается.</p>
+  			<p>Пожалуйста, подождите.</p>
+		</div>
+		<script src = "javascript/preloader.js"></script>
 		<header>
 			<div class = "header">
-				<img class = "bg" src = "images/background.jpg" width = 100%>
+				<video autoplay muted loop width = 100%>
+					<source src="images/headerBackground.mp4" type="video/mp4">
+				</video>
 				<img class = "logo" src = "images/logo.png">
 			</div>
 		</header>
@@ -21,8 +31,12 @@
 				<li><a href = "guides.html">Гайды</a></li>
 			</ul>
 		</div>	
+
+		<div class = "titleSite">
+			<h2>Последние новости из мира игр</h2>
+		</div>
+
 		<article class = "news">
-    		<h2>Последние новости из мира игр</h2>
     		<div class = "blog1">
       			<h3>Известный инсайдер намекнул фанатам на готовящееся возвращение ролевого экшена bloodborne</h3>
 
@@ -124,7 +138,7 @@
     	</article>
     	<footer>
 			<div class = "footer">
-				<a href = "">Техническая поддержка</a>
+				<img class = "logoFooter" src = "images/logoFooter.png" width="20%">
 			</div>
 		</footer>
 	</body>

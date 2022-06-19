@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <meta charset = "utf-8">
+<link rel = "stylesheet" href = "css/preloader.css">
 <link rel = "stylesheet" href = "css/style.css">
+
+<script src = "javascript/list.js"></script>
+
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <head>
 	<title>ИгроМир</title>
 </head>
 <html>
 	<body>
+		<div class="preloader">
+  			<img src="images/loader.gif" width="20%">
+  			<p>Страница загружается.</p>
+  			<p>Пожалуйста, подождите.</p>
+		</div>
+		<script src = "javascript/preloader.js"></script>
 		<header>
 			<div class = "header">
-				<img class = "bg" src = "images/background.jpg" width = 100%>
+				<video autoplay muted loop width = 100%>
+					<source src="images/headerBackground.mp4" type="video/mp4">
+				</video>
 				<img class = "logo" src = "images/logo.png">
 			</div>
 		</header>
@@ -23,7 +35,6 @@
 		</div>
 
 		<div class="guideList">
-			<script src = "javascript/list.js"></script>
 			<div class="dropdown">
 				<button onclick="myFunction()" class="dropbtn">Быстрый выбор</button>
   				<div id="myDropdown" class="dropdown-content">
@@ -39,51 +50,51 @@
 		</div>
 
 		<section class = "guide">
-			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide1.html">Гайд - Где найти настоящего Барона в Metro Exodus</a></h3>
 			<div class = "guideHome">
-      			<p class = "textLeft">На локации «Каспий» в Metro Exodus нужно будет уничтожить Барона. Есть одна небольшая проблема — в этом месте можно найти два Барона!</p>
-				<img src = "images/guideImages/guideHome1Mini.jpg" width = 40%>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide1.html">Гайд - Где найти настоящего Барона в Metro Exodus</a></h3>
+      			<p>На локации «Каспий» в Metro Exodus нужно будет уничтожить Барона. Есть одна небольшая проблема — в этом месте можно найти два Барона!</p>
+				<img src = "images/guideImages/guideHome1Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide2.html">Советы и секреты Dark Souls 2</a></h3>
 			<div class = "guideHome">
-				<img src = "images/guideImages/guideHome2Mini.jpg" width = 40%>
-      			<p class = "textRight">Прохождение Dark Souls 2 — очень непростая задача. В этой статье мы раскроем несколько полезных секретов</p>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide2.html">Советы и секреты Dark Souls 2</a></h3>
+				<p>Прохождение Dark Souls 2 — очень непростая задача. В этой статье мы раскроем несколько полезных секретов</p>
+				<img src = "images/guideImages/guideHome2Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide3.html">Гайд - Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</a></h3>
 			<div class = "guideHome">
-      			<p class = "textLeft">Вместе с обновлением 2.6 в Genshin Impact был добавлен новый регион — «Разлом». Так как локация оказалась довольно большая, чтобы разнообразить её исследование, вы можете выполнять различные задания мира.</p>
-				<img src = "images/guideImages/guideHome3Mini.jpg" width = 40%>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide3.html">Гайд - Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</a></h3>
+      			<p>Вместе с обновлением 2.6 в Genshin Impact был добавлен новый регион — «Разлом». Так как локация оказалась довольно большая, чтобы разнообразить её исследование, вы можете выполнять различные задания мира.</p>
+				<img src = "images/guideImages/guideHome3Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide4.html">Гайд - Где найти реактивные ранцы в Fortnite и как они работают</a></h3>
-			<div class = "guideHome">
-      			<p class = "textLeft">Реактивными ранцами едва ли удивишь бывалого игрока: последний раз они появлялись на карте несколько сезонов назад, да и внутри некоторых творческих карт они даются по умолчанию.</p>
-				<img src = "images/guideImages/guideHome4.jpg" width = 40%>
+    		<div class = "guideHome">
+    			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide4.html">Гайд - Где найти реактивные ранцы в Fortnite и как они работают</a></h3>
+      			<p>Реактивными ранцами едва ли удивишь бывалого игрока: последний раз они появлялись на карте несколько сезонов назад, да и внутри некоторых творческих карт они даются по умолчанию.</p>
+				<img src = "images/guideImages/guideHome4.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide5.html">Гайд - Hollow Knight: всё, что нужно знать об игре, советы новичкам</a></h3>
-			<div class = "guideHome">
-				<img src = "images/guideImages/guideHome5.jpg" width = 40%>
-      			<p class = "textRight">С недавним релизом Hollow Knight: Silksong о Полом рыцаре стали вспоминать все чаще. Хотя Силксонг еще не вышла - не сложно предугадать, что принципы и концепция игры в целом останутся прежними.</p>
+    		<div class = "guideHome">
+    			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide5.html">Гайд - Hollow Knight: всё, что нужно знать об игре, советы новичкам</a></h3>
+      			<p>С недавним релизом Hollow Knight: Silksong о Полом рыцаре стали вспоминать все чаще. Хотя Силксонг еще не вышла - не сложно предугадать, что принципы и концепция игры в целом останутся прежними.</p>
+      			<img src = "images/guideImages/guideHome5.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide6.html">Гайд - Dark Souls 3: Как превратиться в дракона</a></h3>
-			<div class = "guideHome">
-      			<p class = "textLeft">Вы знали, что в Dark Souls 3 вы можете превращаться в дракона? Теперь знаете, и сегодня мы поговорим о том, что вам потребуется для этого и как осуществлять превращение.</p>
-				<img src = "images/guideImages/guideHome6Mini.jpg" width = 40%>
+    		<div class = "guideHome">
+    			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide6.html">Гайд - Dark Souls 3: Как превратиться в дракона</a></h3>
+      			<p>Вы знали, что в Dark Souls 3 вы можете превращаться в дракона? Теперь знаете, и сегодня мы поговорим о том, что вам потребуется для этого и как осуществлять превращение.</p>
+				<img src = "images/guideImages/guideHome6Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide7.html">Гайд - ТОП-15 лучших билдов для Skyrim</a></h3>
 			<div class = "guideHome">
-				<img src = "images/guideImages/guideHome7Mini.png" width = 40%>
-      			<p class = "textRight">Самые эффективные сборки для Довакина, которые подойдут как новичкам, так и опытным игрокам.</p>
+    			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide7.html">Гайд - ТОП-15 лучших билдов для Skyrim</a></h3>
+      			<p>Самые эффективные сборки для Довакина, которые подойдут как новичкам, так и опытным игрокам.</p>
+      			<img src = "images/guideImages/guideHome7Mini.png" width = 100%>
     		</div>
 		</section>
 		<footer>
 			<div class = "footer">
-				<a href = "">Техническая поддержка</a>
+				<img src = "images/logoFooter.png" width="20%">
 			</div>
 		</footer>
 	</body>

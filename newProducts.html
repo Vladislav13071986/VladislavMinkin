@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <meta charset = "utf-8">
+<link rel = "stylesheet" href = "css/preloader.css">
 <link rel = "stylesheet" href = "css/style.css">
+
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <head>
 	<title>ИгроМир</title>
 </head>
 <html>
 	<body>
+		<div class="preloader">
+  			<img src="images/loader.gif" width="20%">
+  			<p>Страница загружается.</p>
+  			<p>Пожалуйста, подождите.</p>
+		</div>
+		<script src = "javascript/preloader.js"></script>
 		<header>
 			<div class = "header">
-				<img class = "bg" src = "images/background.jpg" width = 100%>
+				<video autoplay muted loop width = 100%>
+					<source src="images/headerBackground.mp4" type="video/mp4">
+				</video>
 				<img class = "logo" src = "images/logo.png">
 			</div>
 		</header>
@@ -20,10 +30,13 @@
 				<li><a href = "newProducts.html">Новинки</a></li>
 				<li><a href = "guides.html">Гайды</a></li>
 			</ul>
-		</div>	
+		</div>
+		
 		<section class = "newProductTitle">
-			<h2>Самые ожидаемые новинки текущего года</h2>
-			<p>2022-й — однозначно год больших геймерских надежд. Пандемия коронавируса сдвинула релизы многих проектов, которые теперь стройным рядом выстроились в наступившем году. Чтобы вы не пропустили ничего интересного, рассказываем о самых главных из них.</p>
+			<div class = "titleSite">
+				<h2>Самые ожидаемые новинки текущего года</h2>
+				<p>2022-й — однозначно год больших геймерских надежд. Пандемия коронавируса сдвинула релизы многих проектов, которые теперь стройным рядом выстроились в наступившем году. Чтобы вы не пропустили ничего интересного, рассказываем о самых главных из них.</p>
+			</div>
 		</section>
 
 		<section>
@@ -132,7 +145,7 @@
     		</article>
 
     		<article>
-    			<div class = "newProductArticle" id = "newProduct1">
+    			<div class = "newProductArticle" id = "newProduct7">
 					<h4>God of War: Ragnarok</h4>
 				
 					<div class = "newProductText">
@@ -151,7 +164,7 @@
 
 		<footer>
 			<div class = "footer">
-				<a href = "">Техническая поддержка</a>
+				<img class = "logoFooter" src = "images/logoFooter.png" width="20%">
 			</div>
 		</footer>
 	</body>

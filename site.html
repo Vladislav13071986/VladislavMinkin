@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <meta charset = "utf-8">
+<link rel = "stylesheet" href = "css/preloader.css">
 <link rel = "stylesheet" href = "css/style.css">
+<link rel = "stylesheet" href = "css/simple-adaptive-slider.css">
+
+<script defer src="javascript/simple-adaptive-slider.js"></script>
+
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <head>
 	<title>ИгроМир</title>
 </head>
 <html>
 	<body>
+		<div class="preloader">
+  			<img src="images/loader.gif" width="20%">
+  			<p>Страница загружается.</p>
+  			<p>Пожалуйста, подождите.</p>
+		</div>
+		<script src = "javascript/preloader.js"></script>
 		<header>
 			<div class = "header">
-				<img class = "bg" src = "images/background.jpg" width = 100%>
+				<video autoplay muted loop width = 100%>
+					<source src="images/headerBackground.mp4" type="video/mp4">
+				</video>
 				<img class = "logo" src = "images/logo.png">
 			</div>
 		</header>
@@ -21,27 +34,35 @@
 				<li><a href = "guides.html">Гайды</a></li>				
 			</ul>
 		</div>
-		<article>
+
+		<div class = "titleSite">
 			<h2>Самые ожидаемые игры 2022 года</h2>
 			<h4>Подробности можно узнать в <a class = "linkNews" href = "newProducts.html">этом</a> разделе.</h4>
-			<div class = "newProductsHome">
-				<div class = "newProductHomeBlock">
-					<a href = "newProducts.html#newProduct5"><img src = "images/newProductHome1.jpg" width = 100%></a>
-					<p>«Skyrim в космосе». Обещано вдвое больше диалогов, чем в Skyrim, а глава Bethesda Тодд Говард даже посетил SpaceX в поисках вдохновения для будущей игры.</p>
-				</div>
+		</div>
 
-				<div class = "newProductHomeBlock">
-					<a href = "newProducts.html#newProduct1"><img src = "images/newProductHome2.jpg" width = 100%></a>
-					<p>Новый проект Хидэтаки Миядзаки, созданный в соавторстве с Джорджем Мартином (автор «Игры престолов» придумал игровой мир и персонажей Elden Ring). Dark Souls в открытом мире.</p>
-				</div>
+		<script src = "javascript/sliderConfig.js"></script>
+		<div class="itcss" id = "slider-1">
+  			<div class="itcss__wrapper">
+    			<div class="itcss__items">
+      				<div class="itcss__item">
+        				<a href = "newProducts.html#newProduct5"><img src = "images/newProductHome1.jpg" width = 100%></a>
+        				<p>«Skyrim в космосе». Обещано вдвое больше диалогов, чем в Skyrim, а глава Bethesda Тодд Говард даже посетил SpaceX в поисках вдохновения для будущей игры.</p>
+      				</div>
+      				<div class="itcss__item">
+        				<a href = "newProducts.html#newProduct1"><img src = "images/newProductHome2.jpg" width = 100%></a>
+        				<p>Новый проект Хидэтаки Миядзаки, созданный в соавторстве с Джорджем Мартином (автор «Игры престолов» придумал игровой мир и персонажей Elden Ring). Dark Souls в открытом мире.</p>
+      				</div>
+      				<div class="itcss__item">
+        				<a href = "newProducts.html#newProduct6"><img src = "images/newProductHome3.jpg" width = 100%></a>
+        				<p>Самая ожидаемая игра на постсоветском пространстве. Официальная дата релиза: 8 декабря текущего года. Будем надеяться, что её не перенесут!</p>
+      				</div>
+    			</div>
+  			</div>
+		</div>
 
-				<div class = "newProductHomeBlock">
-					<a href = "newProducts.html#newProduct6"><img src = "images/newProductHome3.jpg" width = 100%></a>
-					<p>Самая ожидаемая игра на постсоветском пространстве. Официальная дата релиза: 8 декабря текущего года. Будем надеяться, что её не перенесут!</p>
-				</div>
-			</div>
-		</article>
-		<h2>Последние новости из мира игр</h2>
+		<div class = "titleSite">
+			<h2>Последние новости из мира игр</h2>
+		</div>
 		<article class = "news">
     		<div class = "blog1">
       			<h3>Известный инсайдер намекнул фанатам на готовящееся возвращение ролевого экшена bloodborne</h3>
@@ -52,6 +73,8 @@
 
 				<p>Кроме того, ранее Мориарти оказался верен в ряде предсказаний. В частности, именно он намекал на обновленную версию Demon's Souls до ее анонса в 2020 году, так что, возможно, инсайдер действительно знает, о чем говорит.</p>
     		</div>
+    	</article>
+    	<article class = "news">
      		<div class = "blog1">
      			<h3>Слухи - в этом году расскажут подробности о Bioshock, Metro 4 и новой игре от Кодзимы</h3>
 
@@ -79,6 +102,8 @@
 
 				<p>Но вряд ли стоит ожидать релизов из этого списка. Речь идет о подробностях по разработке и, возможно, демонстрации геймплея.</p>
     		</div>
+    	</article>
+    	<article class = "news">
      		</div>
      		<div class = "blog1">
       			<h3>Хидэтака Миядзаки назвал любимого босса в Elden Ring</h3>
@@ -90,31 +115,34 @@
 				<p>Elden Ring получила высочайшие оценки от критиков. На Metacritic средний балл игры сейчас составляет 96 из 100, а на OpenCritic экшен стал самой высокооцененной игрой в истории. Наш автор поставил экшену высший балл.</p>
     		</div>
     	</article>
-		<article class = "guide">
-			<h2>Полезные советы</h2>
+
+    	<div class = "titleSite">
+    		<h2>Полезные советы</h2>
 			<h4>Больше подсказок можно найти в <a class = "linkNews" href = "guides.html">этом</a> разделе.</h4>
+    	</div>
 
-			<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide1.html">Гайд - Где найти настоящего Барона в Metro Exodus</a></h3>
+		<article class = "guide">
 			<div class = "guideHome">
-      			<p class = "textLeft">На локации «Каспий» в Metro Exodus нужно будет уничтожить Барона. Есть одна небольшая проблема — в этом месте можно найти два Барона!</p>
-				<img src = "images/guideImages/guideHome1Mini.jpg" width = 40%>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide1.html">Гайд - Где найти настоящего Барона в Metro Exodus</a></h3>
+      			<p>На локации «Каспий» в Metro Exodus нужно будет уничтожить Барона. Есть одна небольшая проблема — в этом месте можно найти два Барона!</p>
+				<img src = "images/guideImages/guideHome1Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide2.html">Советы и секреты Dark Souls 2</a></h3>
 			<div class = "guideHome">
-				<img src = "images/guideImages/guideHome2Mini.jpg" width = 40%>
-      			<p class = "textRight">Прохождение Dark Souls 2 — очень непростая задача. В этой статье мы раскроем несколько полезных секретов</p>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide2.html">Советы и секреты Dark Souls 2</a></h3>
+				<p>Прохождение Dark Souls 2 — очень непростая задача. В этой статье мы раскроем несколько полезных секретов</p>
+				<img src = "images/guideImages/guideHome2Mini.jpg" width = 100%>
     		</div>
 
-    		<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide3.html">Гайд - Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</a></h3>
 			<div class = "guideHome">
-      			<p class = "textLeft">Вместе с обновлением 2.6 в Genshin Impact был добавлен новый регион — «Разлом». Так как локация оказалась довольно большая, чтобы разнообразить её исследование, вы можете выполнять различные задания мира.</p>
-				<img src = "images/guideImages/guideHome3Mini.jpg" width = 40%>
+				<h3 class = "guidesTitle"><a class = "linkNews" href ="guides/guide3.html">Гайд - Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</a></h3>
+      			<p>Вместе с обновлением 2.6 в Genshin Impact был добавлен новый регион — «Разлом». Так как локация оказалась довольно большая, чтобы разнообразить её исследование, вы можете выполнять различные задания мира.</p>
+				<img src = "images/guideImages/guideHome3Mini.jpg" width = 100%>
     		</div>
 		</article>
 		<footer>
 			<div class = "footer">
-				<a href = "">Техническая поддержка</a>
+				<img class = "logoFooter" src = "images/logoFooter.png" width="20%">
 			</div>
 		</footer>
 	</body>
