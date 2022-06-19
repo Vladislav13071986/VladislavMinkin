@@ -1,4 +1,5 @@
 body {
+	background-color: #EAEAEA;
 	margin: 0;
 	padding: 0;
 }
@@ -17,7 +18,7 @@ a {
 
 .logo {
 	position: absolute;
-	z-index: 2;
+	z-index: 0;
 	width: 720px;
 }
 
@@ -30,6 +31,9 @@ a {
 
 #widget {
 	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: -1%;
 }
 
 #widget li{
@@ -38,14 +42,19 @@ a {
 	width: 20%;
 }
 
+#widget ul {
+	padding-inline-start: 0;
+}
+
 #widget a {
+	font-family: fontText1;
 	display: block;
-	padding: 5px 15px;
 	color: #fff;
 	font-size: 150%;
 	text-decoration: none;
-	background: #f64a46;
-	margin-right: 5px;
+	background: #333333;
+	margin-left: 3px;
+	margin-right: 3px;
 }
 
 #widget a:hover {
@@ -54,15 +63,17 @@ a {
 
 
 
+
+
 .guideList {
 	position: fixed;
-	bottom: 40%;
+	bottom: 60%;
 	right: 0;
-	font-family: Arial;
+	font-family: fontText1;
 }
 
 .dropbtn {
-    background-color: #f64a46;
+    background-color: #333333;
     color: white;
     padding: 16px;
     border: none;
@@ -111,14 +122,23 @@ a {
 }
 
 .newProductHomeBlock {
-	background-color: #E1E1E1;
+	background-color: #a2a2d0;
 
 	text-align: center;
-	font-family: Arial;
+	font-family: fontText1;
+}
+
+.titleSite {
+	background-color: #f5f5f5;
+	border-radius: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 1%;
+	margin-bottom: 4%;
 }
 
 h4 {
-	font-family: Arial;
+	font-family: Pusia-Bold;
 	text-align: center;
 }
 
@@ -130,19 +150,34 @@ h4 {
 	color: #fcaeae;
 }
 
+h2 {
+	text-align: center;
+	font-family: Pusia-Bold;
+}
+
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
 
 .newProductTitle p {
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
 
 	text-align: center;
+	font-family: fontText1;
+}
+
+.newProductArticle {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	padding: 1.5%;
+	background-color: #f5f5f5;
+	border-radius: 40px;
 }
 
 .newProductArticle h4 {
-	font-family: Arial;
+	font-family: Pusia-Bold;
 
 	text-align: left;
 
@@ -151,7 +186,7 @@ h4 {
 }
 
 .newProductText {
-	font-family: Arial;
+	font-family: fontText1;
 
 	margin-left: 10%;
 	margin-right: 10%;
@@ -169,7 +204,7 @@ h4 {
 }
 
 .videoNewProduct iframe {
-	 position: absolute;
+	position: absolute;
   	top: 0;
   	left: 0;
   	width: 100%;
@@ -188,33 +223,57 @@ h4 {
 }
 .guidesTitle {
 	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .guideHome {
-	display: flex;
 	margin-left: 5%;
 	margin-right: 5%;
 
-	font-family: Arial;
 
-	background-color: #E1E1E1;
-	padding: 2%;
+	background-color: #f5f5f5;
+	
+	border-radius: 30px;
+	padding: 5%;
 	margin-bottom: 4%;
 }
 
-.textLeft {
+.guideTitle {
+	margin-left: 5%;
+	margin-right: 5%;
+
+
+	background-color: #f5f5f5;
+	
+	border-radius: 30px;
+	padding: 1%;
+	margin-bottom: 4%;
+}
+
+.guidesTitle h2 {
+	margin-left: 5%;
 	margin-right: 5%;
 }
 
-.textRight {
-	margin-left: 4%;
+.guideHome p {
+	margin-left: 2%;
+	margin-right: 2%;
+	font-family: fontText1;
 }
 
-.guideText {
-	margin-left: 7%;
-	margin-right: 7%;
-	font-family: Arial;
-	font-size: 1em;
+.guideHome li {
+	font-family: fontText1;
+}
+
+.guide h3 {
+	font-family: Pusia-Bold;
+	margin-top: 0;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.guideList button {
+	border-radius: 20px 0 0 0;
 }
 
 .linkGuide {
@@ -222,11 +281,12 @@ h4 {
 }
 
 h5 {
+	font-family: Pusia-Bold;
 	font-size: 1.3em;
 }
 
 h1 {
-	font-family: Title;
+	font-family: Pusia-Bold;
 	font-size: 2.4em;
 	text-align: center;
 }
@@ -239,25 +299,39 @@ h1 {
 	padding-left: 5%;
 	padding-right: 5%;
 
-	font-family: Arial;
+	font-family: fontText1;
 }
 
 .blog1 {
-	border: 1px solid black;
+	background-color: #FA5D5B;
+	color: white;
+	border-radius: 20px;
 	padding: 1.5%;
-	margin-bottom: 4%;
+	margin-bottom: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
-h2 {
-	text-align: center;
-	font-family: Arial;
+.blog1 p {
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-h3 {
-	color: #F6444B;
-	font-family: Arial;
+.blog1 ul {
+	padding-inline-start: 0;
+}
+
+.blog1 li {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.blog1 h3 {
+	color: white;
+	font-family: Pusia-Bold;
+
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 /*-----------------------------
@@ -265,26 +339,12 @@ h3 {
 ------------------------------*/
 
 .footer {
-	background-color: #f64a46;
+	background-color: #333333;
 
-	font-family: Arial;
 	text-align: center;
+	padding-top: 1%;
 
-	padding-top: 3%;
-	padding-bottom: 3%;
-}
-
-.footer a {
-	color: #ffffff;
-}
-
-.footer a:hover {
-	color: #b3b3b3;
-}
-
-.cop {
-	text-align: center;
-	font-family: Arial;
+	overflow: hidden;
 }
 
 
@@ -292,7 +352,7 @@ h3 {
 
 
 /*-----------------------------
--------------Шрифт-------------
+-------------Шрифты------------
 ------------------------------*/
 
 @font-face {
@@ -300,11 +360,26 @@ h3 {
 	src: url(../fonts/font1.otf);
 }
 
+@font-face {
+	font-family: Pusia-Bold;
+	src: url(../fonts/Ermilov-Bold.otf);
+}
+
+@font-face {
+	font-family: fontText1;
+	src: url(../fonts/21002.ttf);
+}
+
+
 /*-----------------------------
 ---Адаптация под разрешения----
 ------------------------------*/
 
 @media (max-width: 1440px) {
+
+	img {
+		border-radius: 35px;
+	}
 
 /*-----------------------------
 -------------Шапка-------------
@@ -312,7 +387,6 @@ h3 {
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
@@ -323,14 +397,21 @@ h3 {
 		padding: 1em;
 	}
 
+	#widget {
+		margin-top: 0;
+		margin-bottom: 1%;
+	}
+
 	#widget li{
 		width: 20%;
 	}
 
 	#widget a {
-		padding: 5px 15px;
+		padding: 8px 15px;
 		font-size: 200%;
-		margin-right: 5px;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		border-radius: 25px;
 	}
 
 
@@ -346,39 +427,40 @@ h3 {
 --------Главная вкладка--------
 ------------------------------*/
 
+	.titleSite {
+		border-radius: 35px;
+	}
+
 	.newProductsHome {
-		display: flex;
+		
 	}
 
 	.newProductHomeBlock {
-		width: 30%;
-
-		background-color: #E1E1E1;
-		padding: 1%;
-		margin-left: 2.5%;
-
-
-		text-align: center;
-		font-family: Arial;
 		font-size: 1.1em;
 	}
 
 	h4 {
-		font-family: Arial;
 		font-size: 1.4em;
-		text-align: center;
 	}
 
 	.linkNews {
 		color: #F6444B;
 	}
 
+	h2 {
+		font-size: 2.8em;
+	}
+
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
 
+	.newProductArticle {
+		border-radius: 35px;
+	}
+
 	.newProductTitle p {
-		font-size: 1.5em;
+		font-size: 1.4em;
 	}
 
 	.newProductArticle h4 {
@@ -386,7 +468,7 @@ h3 {
 	}
 
 	.newProductText {
-		font-size: 1.4em;
+		font-size: 1.6em;
 	}
 
 /*-----------------------------
@@ -394,35 +476,24 @@ h3 {
 ------------------------------*/
 
 	.guidesTitle {
-		margin-left: 5%;
+		font-size: 1.6em;
+	}
+
+	.guideTitle h2 {
 		font-size: 2.4em;
+		border-radius: 30px;
+	}
+
+	.guideTitle {
+		border-radius: 35px;
 	}
 
 	.guideHome {
-		display: flex;
-		margin-left: 5%;
-		margin-right: 5%;
-
 		font-size: 1.8em;
-		font-family: Arial;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
-	}
-
-	.textLeft {
-		margin-right: 5%;
-	}
-
-	.textRight {
-		margin-left: 4%;
+		border-radius: 35px;
 	}
 
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 1.6em;
 	}
 
@@ -435,28 +506,16 @@ h3 {
 ------------------------------*/
 
 	.news {
-		padding-left: 4%;
-		padding-right: 4%;
 
-		font-family: Arial;
 	}
 
 	.blog1 {
-		border: 1px solid black;
-		padding: 1.5%;
-		margin-bottom: 4%;
-
-		font-size: 1.6em;
+		font-size: 1.8em;
+		border-radius: 35px;
 	}
 
-	h2 {
-		font-size: 2.7em;
-		text-align: center;
-	}
-
-	h3 {
+	.blog1 h3 {
 		font-size: 1.6em;
-		color: #F6444B;
 	}
 
 /*------------------------------
@@ -464,12 +523,7 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 3em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+		
 	}
 
 }
@@ -478,13 +532,16 @@ h3 {
 
 @media (max-width: 1024px) {
 
+	img {
+		border-radius: 30px;
+	}
+
 /*-----------------------------
 -------------Шапка-------------
 ------------------------------*/
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
@@ -492,18 +549,21 @@ h3 {
 		
 	}
 
-	.btnWidget a {
-		padding: 1em;
-	}
-
 	#widget li{
 		width: 20%;
+	}
+
+	#widget {
+		margin-top: -0.5%;
+		margin-bottom: 1%;
 	}
 
 	#widget a {
 		padding: 5px 15px;
 		font-size: 150%;
-		margin-right: 5px;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		border-radius: 20px;
 	}
 
 
@@ -521,26 +581,19 @@ h3 {
 ------------------------------*/
 
 	.newProductsHome {
-		display: flex;
+		
+	}
+
+	.titleSite {
+		border-radius: 30px;
 	}
 
 	.newProductHomeBlock {
-		width: 30%;
-
-		background-color: #E1E1E1;
-		padding: 1%;
-		margin-left: 2.5%;
-
-
-		text-align: center;
-		font-family: Arial;
 		font-size: 0.9em;
 	}
 
 	h4 {
-		font-family: Arial;
-		font-size: 1em;
-		text-align: center;
+		font-size: 1.1em;
 	}
 
 	.linkNews {
@@ -552,7 +605,7 @@ h3 {
 ------------------------------*/
 
 	.newProductTitle p {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	.newProductArticle h4 {
@@ -560,7 +613,7 @@ h3 {
 	}
 
 	.newProductText {
-		font-size: 1em;
+		font-size: 1.3em;
 	}
 
 /*-----------------------------
@@ -568,35 +621,23 @@ h3 {
 ------------------------------*/
 
 	.guidesTitle {
-		margin-left: 5%;
 		font-size: 1.6em;
 	}
 
+	.guideTitle {
+		border-radius: 30px;
+	}
+
+	.guideTitle h2 {
+		font-size: 1.7em;
+	}
+
 	.guideHome {
-		display: flex;
-		margin-left: 5%;
-		margin-right: 5%;
-
 		font-size: 1.2em;
-		font-family: Arial;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
-	}
-
-	.textLeft {
-		margin-right: 5%;
-	}
-
-	.textRight {
-		margin-left: 4%;
+		border-radius: 30px;
 	}
 
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 1em;
 	}
 
@@ -609,29 +650,20 @@ h3 {
 ------------------------------*/
 
 	.news {
-		padding-left: 4%;
-		padding-right: 4%;
-
-		font-size: 0.8em;
-		font-family: Arial;
+		
 	}
 
 	.blog1 {
-		border: 1px solid black;
-		padding: 1.2%;
-		margin-bottom: 4%;
+		font-size: 1.2em;
+		border-radius: 30px;
+	}
 
-		font-size: 1.1em;
+	.blog1 h3 {
+		font-size: 1.6em;
 	}
 
 	h2 {
-		font-size: 2em;
-		text-align: center;
-	}
-
-	h3 {
-		color: #F6444B;
-		font-size: 1.8em;
+		font-size: 2.2em;
 	}
 
 /*-----------------------------
@@ -639,12 +671,7 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 6em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+	
 	}
 
 }
@@ -653,32 +680,37 @@ h3 {
 
 @media (max-width: 768px) {
 
+	img {
+		border-radius: 25px;
+	}
+
 /*-----------------------------
 -------------Шапка-------------
 ------------------------------*/
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
 		left: 30%;
 	}
 
-	.btnWidget {
-		font-size: 1em;
-		padding-left: 10%;
-	}
-
 	#widget li{
 		width: 20%;
 	}
 
+	#widget {
+		margin-top: -1%;
+		margin-bottom: 1%;
+	}
+
 	#widget a {
-		padding: 5px 15px;
+		padding: 4px 15px;
 		font-size: 120%;
-		margin-right: 10px;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		border-radius: 20px;
 	}
 
 
@@ -695,36 +727,32 @@ h3 {
 ------------------------------*/
 
 	.newProductsHome {
-		display: block;
+		
+	}
+
+	.titleSite {
+		border-radius: 25px;
 	}
 
 	.newProductHomeBlock {
-		width: 60%;
-
-		background-color: #E1E1E1;
-		padding: 1%;
-		margin-bottom: 4%;
-		margin-left: 19%;
-
-
-		text-align: center;
-		font-family: Arial;
 		font-size: 1em;
 	}
 
 	h4 {
-		font-family: Arial;
-		font-size: 1em;
-		text-align: center;
+		font-size: 0.8em;
 	}
 
 	.linkNews {
-		color: #F6444B;
+		
 	}
 
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
+
+	.newProductArticle {
+		border-radius: 25px;
+	}
 
 	.newProductTitle p {
 		font-size: 1em;
@@ -742,53 +770,49 @@ h3 {
 ------Вкладка с новостями------
 ------------------------------*/
 
-	.news {
-		padding-left: 4%;
-		padding-right: 4%;
-
-		font-family: Arial;
+	.blog1 {
+		font-size: 1em;
+		border-radius: 25px;
 	}
 
-	.blog1 {
-		border: 1px solid black;
-		padding: 1.5%;
-		margin-bottom: 4%;
-
-		font-size: 1.5em;
+	.blog1 h3 {
+		font-size: 1.4em;
 	}
 
 	h2 {
 		font-size: 1.7em;
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 1.3em;
-		color: #F6444B;
+		margin-left: 2%;
+		margin-right: 2%;
 	}
 
 /*-----------------------------
 -------Вкладка с гайдами-------
 ------------------------------*/
 
+	.guideHome {
+		font-size: 1em;
+		border-radius: 25px;
+	}
+
+	.guideTitle {
+		border-radius: 25px;
+	}
+
+	.guideHome h3 {
+		font-size: 1.4em;
+	}
+
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 1.2em;
+	}
+
+	.guideTitle h2 {
+		font-size: 1.6em;
 	}
 
 	h5 {
 		font-size: 1.2em;
 	}
-
-	.guideHome {
-
-		font-size: 1em;
-		font-family: Arial;
-
-	}
-
 }
 
 /*-----------------------------
@@ -796,17 +820,16 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 1.2em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+		
 	}
 
 
 
 @media (max-width: 425px) {
+
+	img {
+		border-radius: 20px;
+	}
 
 /*-----------------------------
 -------------Шапка-------------
@@ -814,7 +837,6 @@ h3 {
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
@@ -826,14 +848,21 @@ h3 {
 		padding-left: 10%;
 	}
 
+	#widget {
+		margin-top: -2%;
+		margin-bottom: 1%;
+	}
+
 	#widget li{
 		width: 24%;
 	}
 
 	#widget a {
-		padding: 5px 15px;
+		padding: 3px 15px;
 		font-size: 90%;
-		margin-right: 5px;
+		margin-right: 2%;
+		margin-left: 2%;
+		border-radius: 15px;
 	}
 
 	.guideList a {
@@ -848,48 +877,51 @@ h3 {
 --------Главная вкладка--------
 ------------------------------*/
 
+	.titleSite {
+		border-radius: 20px;
+	}
+
 	.newProductsHome {
-		display: block;
+		
 	}
 
 	.newProductHomeBlock {
-		width: 60%;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
-		margin-left: 19%;
-
-
-		text-align: center;
-		font-family: Arial;
 		font-size: 0.7em;
 	}
 
 	h4 {
-		font-family: Arial;
-		font-size: 0.7em;
-		text-align: center;
+		font-size: 0.6em;
 	}
 
 	.linkNews {
-		color: #F6444B;
+
 	}
+
+
+
+	.itcss__item p {
+		font-size: 0.8em;
+	}
+
 
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
 
 	.newProductTitle p {
-		font-size: 0.9em;
+		font-size: 0.7em;
 	}
 
 	.newProductArticle h4 {
 		font-size: 1.4em;
 	}
 
+	.newProductArticle {
+		border-radius: 20px;
+	}
+
 	.newProductText {
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 /*-----------------------------
@@ -897,40 +929,32 @@ h3 {
 ------------------------------*/
 
 	.guidesTitle {
-		margin-left: 5%;
 		font-size: 1em;
 	}
 
+	.guideTitle {
+		border-radius: 20px;
+	}
+
 	.guideHome {
-		display: flex;
-		margin-left: 5%;
-		margin-right: 5%;
-
-		font-size: 0.7em;
-		font-family: Arial;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
+		font-size: 0.9em;
+		border-radius: 20px;
 	}
 
-	.textLeft {
-		margin-right: 5%;
-	}
-
-	.textRight {
-		margin-left: 4%;
+	.guideHome h3 {
+		font-size: 1.2em;
 	}
 
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 0.9em;
 	}
 
 	h5 {
-		font-size: 1.3em;
+		font-size: 1.2em;
+	}
+
+	.guideTitle h2 {
+		font-size: 1.2em;
 	}
 
 /*-----------------------------
@@ -938,28 +962,20 @@ h3 {
 ------------------------------*/
 
 	.news {
-		padding-left: 4%;
-		padding-right: 4%;
 
-		font-family: Arial;
 	}
 
 	.blog1 {
-		border: 1px solid black;
-		padding: 1.5%;
-		margin-bottom: 4%;
+		font-size: 0.9em;
+		border-radius: 20px;
+	}
 
-		font-size: 1.1em;
+	.blog1 h3 {
+		font-size: 1.2em;
 	}
 
 	h2 {
-		font-size: 1em;
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 1.3em;
-		color: #F6444B;
+		font-size: 1.1em;
 	}
 
 /*-----------------------------
@@ -967,26 +983,9 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 0.8em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+		
 	}
 
-}
-
-@media (max-width: 320px) {
-	#widget li{
-		width: 22%;
-	}
-
-	#widget a {
-		padding: 4px 10px;
-		font-size: 70%;
-		margin-right: 5px;
-	}
 }
 
 
@@ -995,13 +994,16 @@ h3 {
 
 @media (min-width: 1980px) and (max-width: 2560px) {
 
+	img {
+		border-radius: 55px;
+	}
+
 /*-----------------------------
 -------------Шапка-------------
 ------------------------------*/
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
@@ -1013,14 +1015,21 @@ h3 {
 		padding-left: 10%;
 	}
 
+	#widget {
+		margin-top: 0.5%;
+		margin-bottom: 1%;
+	}
+
 	#widget li{
 		width: 20%;
 	}
 
 	#widget a {
-		padding: 5px 15px;
-		font-size: 350%;
-		margin-right: 5px;
+		padding: 9px 15px;
+		font-size: 380%;
+		margin-right: 3%;
+		margin-left: 3%;
+		border-radius: 45px;
 	}
 
 	.guideList a {
@@ -1035,39 +1044,35 @@ h3 {
 --------Главная вкладка--------
 ------------------------------*/
 
+	.titleSite {
+		border-radius: 55px;
+	}
+
 	.newProductsHome {
-		display: flex;
+		
 	}
 
 	.newProductHomeBlock {
-		width: 30%;
-
-		background-color: #E1E1E1;
-		padding: 1%;
-		margin-left: 2.5%;
-
-
-		text-align: center;
-		font-family: Arial;
 		font-size: 2.5em;
 	}
 
 	h4 {
-		font-family: Arial;
-		font-size: 4em;
-		text-align: center;
+		font-size: 2.5em;
 	}
 
 	.linkNews {
-		color: #F6444B;
+		
 	}
 
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
 
+	.newProductArticle {
+		border-radius: 55px;
+	}
 	.newProductTitle p {
-		font-size: 3.5em;
+		font-size: 2.7em;
 	}
 
 	.newProductArticle h4 {
@@ -1075,7 +1080,7 @@ h3 {
 	}
 
 	.newProductText {
-		font-size: 3.6em;
+		font-size: 3.2em;
 	}
 
 /*-----------------------------
@@ -1083,35 +1088,27 @@ h3 {
 ------------------------------*/
 
 	.guidesTitle {
-		margin-left: 5%;
 		font-size: 4.5em;
 	}
 
+	.guideTitle {
+		border-radius: 55px;
+	}
+
+	.guideTitle h2 {
+		font-size: 4.2em;
+	}
+
+	.guideHome h3 {
+		font-size: 1.3em;
+	}
+
 	.guideHome {
-		display: flex;
-		margin-left: 5%;
-		margin-right: 5%;
-
-		font-size: 3em;
-		font-family: Arial;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
-	}
-
-	.textLeft {
-		margin-right: 5%;
-	}
-
-	.textRight {
-		margin-left: 4%;
+		font-size: 3.5em;
+		border-radius: 55px;
 	}
 
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 3em;
 	}
 
@@ -1124,28 +1121,20 @@ h3 {
 ------------------------------*/
 
 	.news {
-		padding-left: 4%;
-		padding-right: 4%;
 
-		font-family: Arial;
 	}
 
 	.blog1 {
-		border: 1px solid black;
-		padding: 1.5%;
-		margin-bottom: 4%;
+		font-size: 3.5em;
+		border-radius: 55px;
+	}
 
-		font-size: 3.2em;
+	.blog1 h3 {
+		font-size: 1.3em;
 	}
 
 	h2 {
 		font-size: 5em;
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 1.4em;
-		color: #F6444B;
 	}
 
 /*------------------------------
@@ -1153,12 +1142,7 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 3em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+		
 	}
 
 }
@@ -1168,13 +1152,16 @@ h3 {
 
 @media (min-width: 1441px) and (max-width: 1979px) {
 
+	img {
+		border-radius: 45px;
+	}
+
 /*-----------------------------
 -------------Шапка-------------
 ------------------------------*/
 
 	.logo {
 		position: absolute;
-		z-index: 2;
 		width: 40%;
 
 		top: 30%;
@@ -1186,58 +1173,62 @@ h3 {
 		padding-left: 10%;
 	}
 
+	#widget {
+		margin-top: 0;
+		margin-bottom: 1%;
+	}
+
 	#widget li{
 		width: 20%;
 	}
 
 	#widget a {
-		padding: 5px 15px;
-		font-size: 250%;
-		margin-right: 5px;
+		padding: 7px 15px;
+		font-size: 300%;
+		margin-right: 3%;
+		margin-left: 3%;
+		border-radius: 35px;
 	}
 
 	.guideList a {
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	.dropbtn {
-    	font-size: 1.8em;
+    	font-size: 2.3em;
 	}
 
 /*-----------------------------
 --------Главная вкладка--------
 ------------------------------*/
 
+	.titleSite {
+		border-radius: 45px;
+	}
+
 	.newProductsHome {
-		display: flex;
+		
 	}
 
 	.newProductHomeBlock {
-		width: 30%;
-
-		background-color: #E1E1E1;
-		padding: 1%;
-		margin-left: 2.5%;
-
-
-		text-align: center;
-		font-family: Arial;
-		font-size: 1.2em;
+		font-size: 2.5em;
 	}
 
 	h4 {
-		font-family: Arial;
 		font-size: 2em;
-		text-align: center;
 	}
 
 	.linkNews {
-		color: #F6444B;
+		
 	}
 
 /*-----------------------------
 ------Вкладка с новинками------
 ------------------------------*/
+
+	.newProductArticle {
+		border-radius: 45px;
+	}
 
 	.newProductTitle p {
 		font-size: 2em;
@@ -1248,7 +1239,7 @@ h3 {
 	}
 
 	.newProductText {
-		font-size: 2.2em;
+		font-size: 2.5em;
 	}
 
 /*-----------------------------
@@ -1256,40 +1247,32 @@ h3 {
 ------------------------------*/
 
 	.guidesTitle {
-		margin-left: 5%;
-		font-size: 3em;
+		font-size: 4.5em;
+	}
+
+	.guideTitle {
+		border-radius: 45px;
+	}
+
+	.guideTitle h2 {
+		font-size: 4.2em;
+	}
+
+	.guideHome h3 {
+		font-size: 1.3em;
 	}
 
 	.guideHome {
-		display: flex;
-		margin-left: 5%;
-		margin-right: 5%;
-
-		font-size: 1.8em;
-		font-family: Arial;
-
-		background-color: #E1E1E1;
-		padding: 2%;
-		margin-bottom: 4%;
-	}
-
-	.textLeft {
-		margin-right: 5%;
-	}
-
-	.textRight {
-		margin-left: 4%;
+		font-size: 2.7em;
+		border-radius: 45px;
 	}
 
 	.guideText {
-		margin-left: 7%;
-		margin-right: 7%;
-		font-family: Arial;
 		font-size: 3em;
 	}
 
 	h5 {
-		font-size: 3em;
+		font-size: 1.5em;
 	}
 
 /*-----------------------------
@@ -1297,28 +1280,20 @@ h3 {
 ------------------------------*/
 
 	.news {
-		padding-left: 4%;
-		padding-right: 4%;
 
-		font-family: Arial;
 	}
 
 	.blog1 {
-		border: 1px solid black;
-		padding: 1.5%;
-		margin-bottom: 4%;
+		font-size: 2.7em;
+		border-radius: 45px;
+	}
 
-		font-size: 2em;
+	.blog1 h3 {
+		font-size: 1.3em;
 	}
 
 	h2 {
-		font-size: 3.5em;
-		text-align: center;
-	}
-
-	h3 {
-		font-size: 1.4em;
-		color: #F6444B;
+		font-size: 4em;
 	}
 
 /*------------------------------
@@ -1326,12 +1301,7 @@ h3 {
 ------------------------------*/
 
 	.footer {
-		font-family: Arial;
-		font-size: 3em;
-		text-align: center;
-
-		padding-top: 3%;
-		padding-bottom: 3%;
+		
 	}
 
 }
