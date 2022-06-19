@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset = "utf-8">
+<link rel = "stylesheet" href = "../css/preloader.css">
 <link rel = "stylesheet" href = "../css/style.css">
 <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 <head>
@@ -7,9 +8,17 @@
 </head>
 <html>
 	<body>
+		<div class="preloader">
+  			<img src="../images/loader.gif" width="20%">
+  			<p>Страница загружается.</p>
+  			<p>Пожалуйста, подождите.</p>
+		</div>
+		<script src = "../javascript/preloader.js"></script>
 		<header>
 			<div class = "header">
-				<img class = "bg" src = "../images/background.jpg" width = 100%>
+				<video autoplay muted loop width = 100%>
+					<source src="../images/headerBackground.mp4" type="video/mp4">
+				</video>
 				<img class = "logo" src = "../images/logo.png">
 			</div>
 		</header>
@@ -22,8 +31,10 @@
 			</ul>
 		</div>	
 		<article>
-			<h2>Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</h2>
-			<div class = "guideText">
+			<div class = "guideTitle">
+				<h2>Прохождение квеста «Угроза во тьме» в Genshin Impact. Как позвонить в колокола и избавиться от тумана</h2>
+			</div>
+			<div class = "guideHome">
 				<img src = "../images/guideImages/guideHome3.jpg" width = 100%>
 				<p>Вместе с обновлением 2.6 в Genshin Impact был добавлен новый регион — «Разлом». Так как локация оказалась довольно большая, чтобы разнообразить её исследование, вы можете выполнять различные задания мира. В этом гайде мы расскажем, как пройти квест «Угроза во тьме» из цепочки заданий «Записи о путешествии вглубь Разлома».</p>
 
@@ -82,7 +93,7 @@
 		</article>
 		<footer>
 			<div class = "footer">
-				<a href = "">Техническая поддержка</a>
+				<img src = "../images/logoFooter.png" width="20%">
 			</div>
 		</footer>
 	</body>
